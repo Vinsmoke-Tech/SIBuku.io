@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>home</title>
+</head>
+
+<body>
+    <!-- header -->
+
+    <header class="header">
+        <a href="home.php" class="logo"> <i class="fas fa-book"></i>Book</a>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here..">
+            
+        </form>
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="cart-btn" class="fas fa-shopping-cart"></div>
+            <div id="login-btn" class="fas fa-user"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- closer btn -->
+   
+    <div id="closer" class="fas fa-times"></div>
+    <!-- navbar -->
+    <nav class="navbar">
+        <a href="home.html">home</a>
+        <a href="shop.html">shop</a>
+        <a href="about.html">about</a>
+        <a href="team.html">team</a>
+        <a href="blog.html">blog</a>
+        <a href="contact.html">contact</a>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- shopping cart -->
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/1.jpg">
+            <div class="content">
+                <h3> Book </h3>
+                <span class="qty"> 1 </span>
+                <span class="x">x</span>
+                <span class="price"> Rp.10000 </span>
+
+            </div>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-times"></i>
+            <img src="image/1.jpg">
+            <div class="content">
+                <h3> Book </h3>
+                <span class="qty"> 1 </span>
+                <span class="x">x</span>
+                <span class="price"> Rp.10000 </span>
+
+            </div>
+        </div>
+
+        <h3 class="total"> total : <span> Rp.20000 </span></h3>
+        <a href="" class="btn">checkout </a>
+
+    </div>
+    <!-- cart end -->
+
+    <!-- Login -->
+    <div class="login-form">
+        <form action="" method="get">
+            <h3>login form</h3>
+            <input type="email" class="box" placeholder="your email">
+            <input type="password" class="box" placeholder="your password">
+            <div class="remember">
+                <input type="checkbox" name="" id="remember-me">
+                <label for="remember-me">remember me</label>
+            </div>
+            <input type="submit" value="login now" class="btn">
+            <p>forget password <a href="">click here</a></p>
+            <p>don't have an account ? <a href="">create now</a></p>
+        </form>
+    </div>
+    <!-- login end -->
+
+    <!-- home section -->
+        <section class="home">
+            <div class="slides-container">
+                <div class="slide active">
+                    <div class="content">
+                        <span>New Book</span>
+                        <h3> History Book</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At necessitatibus labore nostrum asperiores, in quasi recusandae saepe sit error officia a animi adipisci dignissimos numquam, optio repudiandae eaque minima! Dolore.</p>
+                        <a href="http://" class="btn">Shop Now</a> 
+                    </div>
+                    <div class="image">
+                        <img src="image/1.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="content">
+                        <span>New Book</span>
+                        <h3> History Book</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At necessitatibus labore nostrum asperiores, in quasi recusandae saepe sit error officia a animi adipisci dignissimos numquam, optio repudiandae eaque minima! Dolore.</p>
+                        <a href="http://" class="btn">Shop Now</a> 
+                    </div>
+                    <div class="image">
+                        <img src="image/2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="slide-next" onclick="next()" class="fas fa-angle-right"></div>
+            <div id="slide-prev" onclick="prev()" class="fas fa-angle-left"></div>
+        </section>
+    <!-- home end -->
+
+    <!-- Banner -->
+    <section class="banner-container">
+        <div class="banner">
+            <img src="image/3.jpg" alt="" srcset="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>up to 50%</h3>
+                <a href="http://" class="btn">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/3.jpg" alt="" srcset="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>up to 50%</h3>
+                <a href="http://" class="btn">Shop Now</a>
+            </div>
+        </div>
+
+        <div class="banner">
+            <img src="image/3.jpg" alt="" srcset="">
+            <div class="content">
+                <span>limited offer</span>
+                <h3>up to 50%</h3>
+                <a href="http://" class="btn">Shop Now</a>
+            </div>
+        </div> 
+    </section>
+    <!-- Banner end -->
+    <!-- footer -->
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3> menu </h3>
+                        <a href="home.html"><i class="fas fa-home"></i> home</a>
+                        <a href="shop.html"><i class="fas fa-shopping-cart"></i>shop</a>
+                        <a href="about.html"><i class="fas fa-arrow-right"></i>about</a>
+                        <a href="team.html"><i class="fas fa-users"></i>team</a>
+                        <a href="blog.html"><i class="fas fa-blog"></i>blog</a>
+                        <a href="contact.html"><i class="fas fa-headset"></i>contact</a>
+                </div>
+
+                <div class="box">
+                    <h3> order</h3>
+                    <a href="#"><i class="fas fa-shopping-basket"></i> my order </a>
+                    <a href="#"><i class="fas fa-list"></i>my whistlist</a>
+                    <a href="#"><i class="fas fa-address-card"></i>my account</a>
+                    <a href="#"><i class="fas fa-star"></i>my favorite</a>
+                    <a href="#"><i class="fas fa-file-contract"></i>terms of user</a>
+                    
+                </div>
+
+                <div class="box">
+                    <h3>social media</h3>
+                    <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                    <a href="#"> <i class="fab fa-github"></i> github </a>
+                    <a href="#"> <i class="fab fa-instagram"></i></i> instagram </a>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section class="credit">
+            created by daffa
+        </section>
+    <!-- footer end -->
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
